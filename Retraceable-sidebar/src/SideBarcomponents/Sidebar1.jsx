@@ -16,7 +16,7 @@ const Sidebar1 = () => {
     <div className="sidebar-container">
       <div className="sidebar-logo">
         <div className="logo-icon"></div>
-        <span className="logo-text">Brand</span>
+        <span className="logo-text">Logo</span>
       </div>
 
       <nav className="sidebar-nav">
@@ -32,12 +32,6 @@ const Sidebar1 = () => {
         ))}
       </nav>
 
-      <div className="sidebar-footer">
-        <button className="nav-item logout">
-          <span className="icon-wrapper"><LogOut size={22} /></span>
-          <span className="nav-text">Logout</span>
-        </button>
-      </div>
     </div>
   );
 };
