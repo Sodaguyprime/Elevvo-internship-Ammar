@@ -3,17 +3,16 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #f5f5f5;
+  background: linear-gradient(135deg, #6bacf7 0%, #6bacf7 50%, #6bacf7 100%);
   padding: 20px;
+  border-radius: 24px;
 }
 
-/* Wrapper holds both image and form side by side */
 .contact-wrapper {
   display: flex;
   gap: 40px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: #6bacf7;
+
   max-width: 1000px;
   width: 100%;
   overflow: hidden;
@@ -25,7 +24,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #6366f1;
   padding: 40px;
 }
 
@@ -40,6 +38,7 @@
   flex: 1;
   padding: 40px;
   background: white;
+  border-radius: 24px;
 }
 
 .contact-form h2 {
@@ -58,12 +57,12 @@
   margin-bottom: 8px;
   color: #555;
   font-weight: 500;
-  font-size: 14px;
+  font-size: px;
 }
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
+  width: 95%;
   padding: 12px 15px;
   border: 1px solid #ddd;
   border-radius: 6px;
