@@ -1,4 +1,4 @@
-import './Cards.css';
+import '../Stylings/Cards.css';
 
 const Cards = ({Data}) => {
   return (
