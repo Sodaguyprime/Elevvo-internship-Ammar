@@ -10,83 +10,155 @@
     },
     {
       "id": 2,
-      "title": "The Future of Web Development",
-      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800",
-      "description": "Exploring emerging trends and technologies shaping the next generation of web applications.",
+      "title": "Street Food Adventures in Bangkok",
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800",
+      "description": "Exploring the vibrant night markets and hidden food stalls of Thailand's bustling capital.",
       "date": "2026-02-03",
-      "genre": "Tech"
+      "genre": "Food"
     },
     {
       "id": 3,
-      "title": "Building Scalable APIs with Node.js",
-      "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=800",
-      "description": "Best practices for designing and implementing robust backend systems that can grow with your application.",
+      "title": "Hidden Gems of the Italian Countryside",
+      "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800",
+      "description": "Discover charming villages and breathtaking landscapes beyond the typical tourist destinations.",
       "date": "2025-12-20",
-      "genre": "Tech"
+      "genre": "Travel"
     },
     {
       "id": 4,
-      "title": "CSS Grid vs Flexbox: When to Use Each",
-      "image": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800",
-      "description": "A comprehensive guide to choosing the right layout method for your web projects.",
+      "title": "Building Scalable APIs with Node.js",
+      "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=800",
+      "description": "Best practices for designing and implementing robust backend systems that can grow with your application.",
       "date": "2026-01-28",
       "genre": "Tech"
     },
     {
       "id": 5,
-      "title": "Introduction to TypeScript",
-      "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800",
-      "description": "Discover how TypeScript can help you write safer, more maintainable JavaScript code.",
+      "title": "The Art of French Pastry Making",
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800",
+      "description": "Master the techniques behind classic croissants, éclairs, and macarons from Parisian experts.",
       "date": "2026-02-10",
-      "genre": "Tech"
+      "genre": "Food"
     },
     {
       "id": 6,
-      "title": "Introduction to TypeScript",
-      "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800",
-      "description": "Discover how TypeScript can help you write safer, more maintainable JavaScript code.",
-      "date": "2026-02-10",
-      "genre": "Tech"
+      "title": "Backpacking Through Patagonia",
+      "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800",
+      "description": "A complete guide to trekking the stunning trails and glaciers of South America's wild frontier.",
+      "date": "2025-11-18",
+      "genre": "Travel"
     },
     {
       "id": 7,
-      "title": "Introduction to TypeScript",
-      "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800",
-      "description": "Discover how TypeScript can help you write safer, more maintainable JavaScript code.",
-      "date": "2026-02-10",
+      "title": "Introduction to Machine Learning",
+      "image": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800",
+      "description": "Understanding the basics of ML algorithms and how to apply them to real-world problems.",
+      "date": "2026-01-05",
       "genre": "Tech"
     },
     {
       "id": 8,
-      "title": "Introduction to TypeScript",
-      "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800",
-      "description": "Discover how TypeScript can help you write safer, more maintainable JavaScript code.",
-      "date": "2026-02-10",
-      "genre": "Tech"
+      "title": "Farm-to-Table: The Ultimate Guide",
+      "image": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=800",
+      "description": "How seasonal eating and local sourcing are revolutionizing modern cuisine.",
+      "date": "2026-02-08",
+      "genre": "Food"
     },
     {
       "id": 9,
-      "title": "Introduction to TypeScript",
-      "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800",
-      "description": "Discover how TypeScript can help you write safer, more maintainable JavaScript code.",
-      "date": "2026-02-10",
-      "genre": "Tech"
+      "title": "Tokyo's Best Ramen Shops",
+      "image": "https://images.unsplash.com/photo-1557872943-16a5ac26437e?w=800",
+      "description": "From rich tonkotsu to delicate shoyu, a tour of the city's most legendary ramen destinations.",
+      "date": "2025-12-30",
+      "genre": "Food"
     },
     {
       "id": 10,
-      "title": "Introduction to TypeScript",
-      "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800",
-      "description": "Discover how TypeScript can help you write safer, more maintainable JavaScript code.",
-      "date": "2026-02-10",
-      "genre": "Tech"
+      "title": "Island Hopping in Greece",
+      "image": "https://images.unsplash.com/photo-1503152394-c571994fd383?w=800",
+      "description": "Plan the perfect Aegean adventure with our insider tips on Santorini, Mykonos, and beyond.",
+      "date": "2026-01-22",
+      "genre": "Travel"
     },
     {
       "id": 11,
+      "title": "CSS Grid vs Flexbox: When to Use Each",
+      "image": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800",
+      "description": "A comprehensive guide to choosing the right layout method for your web projects.",
+      "date": "2026-02-01",
+      "genre": "Tech"
+    },
+    {
+      "id": 12,
+      "title": "The Future of Web Development",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800",
+      "description": "Exploring emerging trends and technologies shaping the next generation of web applications.",
+      "date": "2025-12-15",
+      "genre": "Tech"
+    },
+    {
+      "id": 13,
+      "title": "Exploring Morocco's Spice Markets",
+      "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800",
+      "description": "Navigate the colorful souks of Marrakech and discover authentic North African flavors.",
+      "date": "2026-01-10",
+      "genre": "Travel"
+    },
+    {
+      "id": 14,
+      "title": "Sourdough Bread: A Beginner's Journey",
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800",
+      "description": "Everything you need to know to start your own sourdough starter and bake artisan bread at home.",
+      "date": "2026-02-05",
+      "genre": "Food"
+    },
+    {
+      "id": 15,
+      "title": "Cybersecurity Best Practices for 2026",
+      "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800",
+      "description": "Protect your data and systems with these essential security strategies for modern businesses.",
+      "date": "2026-01-20",
+      "genre": "Tech"
+    },
+    {
+      "id": 16,
+      "title": "Road Trip Through Iceland",
+      "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800",
+      "description": "Waterfalls, glaciers, and the Northern Lights await on this unforgettable Ring Road adventure.",
+      "date": "2025-12-08",
+      "genre": "Travel"
+    },
+    {
+      "id": 17,
+      "title": "Plant-Based Cooking Made Easy",
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800",
+      "description": "Delicious vegan recipes that prove you don't need meat or dairy for incredible flavor.",
+      "date": "2026-01-12",
+      "genre": "Food"
+    },
+    {
+      "id": 18,
       "title": "Introduction to TypeScript",
       "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800",
       "description": "Discover how TypeScript can help you write safer, more maintainable JavaScript code.",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "genre": "Tech"
+    },
+    {
+      "id": 19,
+      "title": "Safari Adventures in Tanzania",
+      "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800",
+      "description": "Witness the Great Migration and spot the Big Five in Africa's most spectacular wildlife reserves.",
+      "date": "2025-11-25",
+      "genre": "Travel"
+    },
+    {
+      "id": 20,
+      "title": "Mastering Mexican Street Tacos",
+      "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800",
+      "description": "Authentic recipes and techniques for creating mouthwatering tacos just like Mexico City's best vendors.",
+      "date": "2026-01-30",
+      "genre": "Food"
     }
   ]
 }
