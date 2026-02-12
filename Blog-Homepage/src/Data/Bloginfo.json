@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Getting Started with React Hooks",
+      "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800",
+      "description": "Learn the fundamentals of React Hooks and how they can simplify your component logic.",
+      "date": "2026-01-15",
+      "genre": "Tech"
+    },
+    {
+      "id": 2,
+      "title": "The Future of Web Development",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800",
+      "description": "Exploring emerging trends and technologies shaping the next generation of web applications.",
+      "date": "2026-02-03",
+      "genre": "Tech"
+    },
+    {
+      "id": 3,
+      "title": "Building Scalable APIs with Node.js",
+      "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=800",
+      "description": "Best practices for designing and implementing robust backend systems that can grow with your application.",
+      "date": "2025-12-20",
+      "genre": "Tech"
+    },
+    {
+      "id": 4,
+      "title": "CSS Grid vs Flexbox: When to Use Each",
+      "image": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800",
+      "description": "A comprehensive guide to choosing the right layout method for your web projects.",
+      "date": "2026-01-28",
+      "genre": "Tech"
+    },
+    {
+      "id": 5,
+      "title": "Introduction to TypeScript",
+      "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800",
+      "description": "Discover how TypeScript can help you write safer, more maintainable JavaScript code.",
+      "date": "2026-02-10",
+      "genre": "Tech"
+    }
+  ]
+}
