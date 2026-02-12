@@ -52,12 +52,16 @@ const DisplayCards = () => {
                 </select>
 
             </div>
-            
+            {displayedPosts.length >0 ? (
             <div className="cards-grid">
+                
                 {displayedPosts.map((post) => (
                     <Cards key={post.id} Data={post} />
                 ))}
             </div>
+            ) : (
+                <p className="no-results">No posts found matching your criteria.</p>
+            )}
         </div>
     )
 }
