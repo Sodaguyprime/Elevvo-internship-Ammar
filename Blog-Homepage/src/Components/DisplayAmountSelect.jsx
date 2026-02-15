@@ -1,4 +1,4 @@
-// DisplayAmountSelect.jsx
+
 const DisplayAmountSelect = ({ 
   value, 
   onChange, 

@@ -1,4 +1,4 @@
-// SearchInput.jsx
+
 import React from 'react';
 
 const SearchInput = ({ value, onChange, placeholder = "Search by title..." }) => {

@@ -2,163 +2,243 @@
   "posts": [
     {
       "id": 1,
-      "title": "Getting Started with React Hooks",
+      "title": "Why I Finally Started Learning React",
       "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800",
-      "description": "Learn the fundamentals of React Hooks and how they can simplify your component logic.",
+      "description": "After years of putting it off, I dove into React Hooks. Here's what surprised me about modern web development.",
       "date": "2026-01-15",
       "genre": "Tech"
     },
     {
       "id": 2,
-      "title": "Street Food Adventures in Bangkok",
+      "title": "My First Night Market in Bangkok",
       "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800",
-      "description": "Exploring the vibrant night markets and hidden food stalls of Thailand's bustling capital.",
+      "description": "I got completely lost in the chaos and it was perfect. From mango sticky rice to pad thai at 2am.",
       "date": "2026-02-03",
       "genre": "Food"
     },
     {
       "id": 3,
-      "title": "Hidden Gems of the Italian Countryside",
+      "title": "That Time I Got Lost in Tuscany",
       "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800",
-      "description": "Discover charming villages and breathtaking landscapes beyond the typical tourist destinations.",
+      "description": "Taking the wrong turn led me to the most charming village I've ever seen. Sometimes the best moments are unplanned.",
       "date": "2025-12-20",
       "genre": "Travel"
     },
     {
       "id": 4,
-      "title": "Building Scalable APIs with Node.js",
+      "title": "Building My First Real API",
       "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=800",
-      "description": "Best practices for designing and implementing robust backend systems that can grow with your application.",
+      "description": "What I learned from countless Stack Overflow searches and why documentation matters more than I thought.",
       "date": "2026-01-28",
       "genre": "Tech"
     },
     {
       "id": 5,
-      "title": "The Art of French Pastry Making",
+      "title": "I Tried Making Croissants at Home",
       "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800",
-      "description": "Master the techniques behind classic croissants, éclairs, and macarons from Parisian experts.",
+      "description": "Spoiler: they didn't look like the photos. But the butter, the layers, the satisfaction? Totally worth it.",
       "date": "2026-02-10",
       "genre": "Food"
     },
     {
       "id": 6,
-      "title": "Backpacking Through Patagonia",
+      "title": "Three Weeks in Patagonia Changed Me",
       "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800",
-      "description": "A complete guide to trekking the stunning trails and glaciers of South America's wild frontier.",
+      "description": "Hiking glaciers, sleeping under stars, and learning to be okay with being uncomfortable.",
       "date": "2025-11-18",
       "genre": "Travel"
     },
     {
       "id": 7,
-      "title": "Introduction to Machine Learning",
+      "title": "Machine Learning Finally Clicked",
       "image": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800",
-      "description": "Understanding the basics of ML algorithms and how to apply them to real-world problems.",
+      "description": "It took me three courses and a pet project to actually understand it. Here's what finally made sense.",
       "date": "2026-01-05",
       "genre": "Tech"
     },
     {
       "id": 8,
-      "title": "Farm-to-Table: The Ultimate Guide",
+      "title": "Shopping at My Local Farmer's Market",
       "image": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=800",
-      "description": "How seasonal eating and local sourcing are revolutionizing modern cuisine.",
+      "description": "I met the people who grow my food. Now my Sunday mornings look completely different.",
       "date": "2026-02-08",
       "genre": "Food"
     },
     {
       "id": 9,
-      "title": "Tokyo's Best Ramen Shops",
+      "title": "Ramen Hunting in Tokyo at 3am",
       "image": "https://images.unsplash.com/photo-1557872943-16a5ac26437e?w=800",
-      "description": "From rich tonkotsu to delicate shoyu, a tour of the city's most legendary ramen destinations.",
+      "description": "My quest to find the perfect bowl took me to tiny shops and late-night conversations I'll never forget.",
       "date": "2025-12-30",
       "genre": "Food"
     },
     {
       "id": 10,
-      "title": "Island Hopping in Greece",
+      "title": "Island Hopping Solo in Greece",
       "image": "https://images.unsplash.com/photo-1503152394-c571994fd383?w=800",
-      "description": "Plan the perfect Aegean adventure with our insider tips on Santorini, Mykonos, and beyond.",
+      "description": "Ferries, sunset views, and why traveling alone turned out to be the best decision I made this year.",
       "date": "2026-01-22",
       "genre": "Travel"
     },
     {
       "id": 11,
-      "title": "CSS Grid vs Flexbox: When to Use Each",
+      "title": "CSS Grid Changed How I Build Websites",
       "image": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800",
-      "description": "A comprehensive guide to choosing the right layout method for your web projects.",
+      "description": "I was a Flexbox loyalist until this project. Now I can't imagine going back.",
       "date": "2026-02-01",
       "genre": "Tech"
     },
     {
       "id": 12,
-      "title": "The Future of Web Development",
+      "title": "What I'm Excited About in Web Dev Right Now",
       "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800",
-      "description": "Exploring emerging trends and technologies shaping the next generation of web applications.",
+      "description": "The tools and frameworks that actually have me pumped to code. Plus what I'm learning next.",
       "date": "2025-12-15",
       "genre": "Tech"
     },
     {
       "id": 13,
-      "title": "Exploring Morocco's Spice Markets",
+      "title": "Getting Lost in Marrakech's Souks",
       "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800",
-      "description": "Navigate the colorful souks of Marrakech and discover authentic North African flavors.",
+      "description": "The colors, the smells, the chaos. I bought way too much saffron and I regret nothing.",
       "date": "2026-01-10",
       "genre": "Travel"
     },
     {
       "id": 14,
-      "title": "Sourdough Bread: A Beginner's Journey",
+      "title": "My Sourdough Starter Has a Name Now",
       "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800",
-      "description": "Everything you need to know to start your own sourdough starter and bake artisan bread at home.",
+      "description": "Meet Bubbles. Week one of my bread journey and already I'm talking to flour and water like it's a pet.",
       "date": "2026-02-05",
       "genre": "Food"
     },
     {
       "id": 15,
-      "title": "Cybersecurity Best Practices for 2026",
+      "title": "That Time I Almost Got Hacked",
       "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800",
-      "description": "Protect your data and systems with these essential security strategies for modern businesses.",
+      "description": "A phishing email almost got me. Here's what I learned about protecting my digital life.",
       "date": "2026-01-20",
       "genre": "Tech"
     },
     {
       "id": 16,
-      "title": "Road Trip Through Iceland",
+      "title": "Chasing the Northern Lights in Iceland",
       "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800",
-      "description": "Waterfalls, glaciers, and the Northern Lights await on this unforgettable Ring Road adventure.",
+      "description": "Four nights, three false alarms, and one moment that made me cry. Worth every freezing minute.",
       "date": "2025-12-08",
       "genre": "Travel"
     },
     {
       "id": 17,
-      "title": "Plant-Based Cooking Made Easy",
+      "title": "How I Accidentally Became Plant-Based",
       "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800",
-      "description": "Delicious vegan recipes that prove you don't need meat or dairy for incredible flavor.",
+      "description": "Started with Meatless Mondays. Now my kitchen is full of chickpeas and I'm loving it.",
       "date": "2026-01-12",
       "genre": "Food"
     },
     {
       "id": 18,
-      "title": "Introduction to TypeScript",
+      "title": "Why I'm Finally Learning TypeScript",
       "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800",
-      "description": "Discover how TypeScript can help you write safer, more maintainable JavaScript code.",
+      "description": "I fought it for so long. Then one bug at 2am made me see the light. Here's my journey.",
       "date": "2026-02-11",
       "genre": "Tech"
     },
     {
       "id": 19,
-      "title": "Safari Adventures in Tanzania",
+      "title": "My Tanzania Safari Was Nothing Like I Expected",
       "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800",
-      "description": "Witness the Great Migration and spot the Big Five in Africa's most spectacular wildlife reserves.",
+      "description": "Lions, elephants, and a sunrise that stopped time. Also, camping is different when you hear hyenas at night.",
       "date": "2025-11-25",
       "genre": "Travel"
     },
     {
       "id": 20,
-      "title": "Mastering Mexican Street Tacos",
+      "title": "Learning to Make Tacos Like My Abuela",
       "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800",
-      "description": "Authentic recipes and techniques for creating mouthwatering tacos just like Mexico City's best vendors.",
+      "description": "No recipe, just watching and learning. These are the moments I'll treasure forever.",
       "date": "2026-01-30",
       "genre": "Food"
+    },
+    {
+      "id": 21,
+      "title": "My First Coding Bootcamp Experience",
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800",
+      "description": "Twelve weeks that changed my career. The good, the hard, and the moments I almost quit.",
+      "date": "2026-02-14",
+      "genre": "Tech"
+    },
+    {
+      "id": 22,
+      "title": "Weekend Brunch Experiments",
+      "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=800",
+      "description": "Trying a new recipe every Sunday. This week's shakshuka was a game-changer.",
+      "date": "2026-01-18",
+      "genre": "Food"
+    },
+    {
+      "id": 23,
+      "title": "Backpacking Vietnam on $30 a Day",
+      "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800",
+      "description": "From Hanoi to Ho Chi Minh City, street food, night trains, and the kindest strangers.",
+      "date": "2026-01-25",
+      "genre": "Travel"
+    },
+    {
+      "id": 24,
+      "title": "Why I Switched to Linux",
+      "image": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=800",
+      "description": "A month in and I'm never going back. Here's what surprised me most about the switch.",
+      "date": "2025-12-28",
+      "genre": "Tech"
+    },
+    {
+      "id": 25,
+      "title": "My Kitchen Disaster Turned Into My Best Recipe",
+      "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800",
+      "description": "Burned garlic, too much salt, and somehow it all worked out. Happy accidents are the best teacher.",
+      "date": "2026-02-07",
+      "genre": "Food"
+    },
+    {
+      "id": 26,
+      "title": "Camping in the Scottish Highlands Alone",
+      "image": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800",
+      "description": "Just me, my tent, and miles of heather. The silence was louder than I expected.",
+      "date": "2025-11-30",
+      "genre": "Travel"
+    },
+    {
+      "id": 27,
+      "title": "Building My Portfolio Site From Scratch",
+      "image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800",
+      "description": "No templates this time. Every line of code is mine and I'm stupidly proud of it.",
+      "date": "2026-01-08",
+      "genre": "Tech"
+    },
+    {
+      "id": 28,
+      "title": "I Cooked Through an Entire Cookbook",
+      "image": "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800",
+      "description": "52 recipes in one year. Some flopped, most were amazing, and I learned so much about myself.",
+      "date": "2025-12-10",
+      "genre": "Food"
+    },
+    {
+      "id": 29,
+      "title": "Road Tripping the California Coast",
+      "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800",
+      "description": "PCH, fog rolling in, and playlists that matched every mood. My favorite week of the year.",
+      "date": "2026-02-12",
+      "genre": "Travel"
+    },
+    {
+      "id": 30,
+      "title": "My Side Project Actually Launched",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800",
+      "description": "After two years of 'I'll finish it next week.' It's live, it's imperfect, and I'm so happy.",
+      "date": "2026-02-13",
+      "genre": "Tech"
     }
   ]
 }

@@ -52,26 +52,28 @@ const DisplayCards = () => {
                 <h1 className="display-cards-title">Blog Posts</h1>
                 <p className="display-cards-subtitle">Explore our latest articles and insights</p>
                 
-                <label htmlFor="search" className="Search">Search</label>
-                <div>
-                    <SearchInput 
-                        value={searchedPosts}
-                        onChange={(e) => setSearchedPosts(e.target.value)}
-                    />
-                </div>
+                <div className="filters-container">
+                    <div className="filter-group">
+                        <SearchInput 
+                            value={searchedPosts}
+                            onChange={(e) => setSearchedPosts(e.target.value)}
+                        />
+                    </div>
 
-                <label htmlFor="DisplayAmount" className="Display">Display</label>
-                <div>
-                    <DisplayAmountSelect 
-                        value={limit}
-                        onChange={handleLimitChange}
-                    />
-                </div>
+                    <div className="filter-group">
+                        <GenreFilter 
+                            value={genreFilter}
+                            onChange={(e) => setGenreFilter(e.target.value)}
+                        />
+                    </div>
 
-                <GenreFilter 
-                    value={genreFilter}
-                    onChange={(e) => setGenreFilter(e.target.value)}
-                />
+                    <div className="filter-group">
+                        <DisplayAmountSelect 
+                            value={limit}
+                            onChange={handleLimitChange}
+                        />
+                    </div>
+                </div>
             </div>
 
             {displayedPosts.length > 0 ? (

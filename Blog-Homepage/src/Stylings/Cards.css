@@ -1,71 +1,75 @@
 .card {
-  background: white;
-  border-radius: 12px;
+  background: #ffffff;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(139, 115, 85, 0.12);
+  transition: all 0.3s ease;
   height: 100%;
   display: flex;
   flex-direction: column;
+  border: 1px solid #f5ede0;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(139, 115, 85, 0.18);
 }
 
 .card-image-container {
   width: 100%;
   height: 200px;
   overflow: hidden;
-  background: #f0f0f0;
+  background: #f5f1e8;
 }
 
 .card-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
 .card:hover .card-image {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .card-content {
-  padding: 20px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  background: #fffcf7;
 }
 
 .card-genre {
   display: inline-block;
-  background: #e3f2fd;
-  color: #1976d2;
+  background: linear-gradient(135deg, #e8dfd0 0%, #f5ede0 100%);
+  color: #6b5a47;
   font-size: 12px;
-  font-weight: 600;
-  padding: 4px 12px;
-  border-radius: 16px;
-  margin-bottom: 12px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 14px;
   width: fit-content;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 4px rgba(139, 115, 85, 0.08);
 }
 
 .card-title {
   font-size: 22px;
   font-weight: 700;
-  color: #222;
-  margin: 0 0 12px 0;
-  line-height: 1.3;
+  color: #5a4a3a;
+  margin: 0 0 14px 0;
+  line-height: 1.4;
+  font-family: 'Georgia', serif;
 }
 
 .card-description {
-  color: #666;
+  color: #8b7355;
   font-size: 15px;
-  line-height: 1.6;
-  margin: 0 0 16px 0;
+  line-height: 1.7;
+  margin: 0 0 18px 0;
   flex-grow: 1;
 }
 
@@ -73,25 +77,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
-  border-top: 1px solid #eee;
+  padding-top: 18px;
+  border-top: 2px solid #f5ede0;
 }
 
 .card-date {
-  color: #999;
+  color: #b5a595;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .card-read-more {
-  background: transparent;
+  background: linear-gradient(135deg, #c9b8a0 0%, #b5a595 100%);
   border: none;
-  color: #1976d2;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  transition: color 0.2s ease;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(139, 115, 85, 0.15);
 }
 
 .card-read-more:hover {
-  color: #1565c0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 115, 85, 0.25);
+  background: linear-gradient(135deg, #b5a595 0%, #a39484 100%);
 }

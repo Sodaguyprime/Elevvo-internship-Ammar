@@ -1,4 +1,4 @@
-// GenreFilter.jsx
+
 import React from 'react';
 
 const GenreFilter = ({ value, onChange, genres = ['Tech', 'Travel', 'Food'] }) => {
