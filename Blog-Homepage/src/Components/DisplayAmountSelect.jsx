@@ -1,11 +1,15 @@
 // DisplayAmountSelect.jsx
-import React from 'react';
-
-const DisplayAmountSelect = ({ value, onChange, options = [3, 6, 9] }) => {
+const DisplayAmountSelect = ({ 
+  value, 
+  onChange, 
+  options = [3, 6, 9],
+  id = "DisplayAmount",
+  className = "display-select"
+}) => {
   return (
     <select 
-      id="DisplayAmount" 
-      className="display-select" 
+      id={id} 
+      className={className} 
       value={value}
       onChange={onChange}
     >
