@@ -3,6 +3,11 @@ import '../Stylings/DisplayCards.css';
 import Cards from './Cards';
 import Bloginfo from '../Data/Bloginfo.json';
 import { useEffect, useState } from 'react';
+import SearchInput from './SearchInput';
+import DisplayAmountSelect from './DisplayAmountSelect';
+import GenreFilter from './GenreFilter';
+
+
 const DisplayCards = () => {
     const [limit, setLimit] = React.useState(3);
     const [displayedPosts, setDisplayedPosts] = useState(Bloginfo.posts.slice(0, limit));
@@ -19,8 +24,6 @@ const DisplayCards = () => {
     }, [searchedPosts, limit, genreFilter]);
 
 
-    
-
     return (
         <div className="display-cards-container">
             <div className="display-cards-header">
@@ -29,27 +32,24 @@ const DisplayCards = () => {
                 <label htmlFor="DisplayAmount" className="Display">Display</label>
                 
                 <label htmlFor="search" className="Search">Search</label>
-                <input 
-                    type="text" 
-                    id="search"
-                    className="search-input"
-                    placeholder="Search by title..."
-                    value={searchedPosts}
-                    onChange={(e) => setSearchedPosts(e.target.value)}
-                />
+                 <div>
+      <SearchInput 
+        value={searchedPosts}
+        onChange={(e) => setSearchedPosts(e.target.value)}
+      />
+    </div>
 
-                <select id="DisplayAmount" className="display-select" onChange={(e) => setLimit(Number(e.target.value))}>
-                    <option value="3">3</option>
-                    <option value="6">6</option>
-                    <option value="9">9</option>
-                </select>
+                <div>
+      <DisplayAmountSelect 
+        value={limit}
+        onChange={(e) => setLimit(Number(e.target.value))}
+      />
+    </div>
 
-                <select id="Genre-Filter" className="Genre-Filter" onChange={(e) => setGenreFilter(e.target.value)}>
-                    <option value="">All Genres</option>
-                    <option value="Tech">Tech</option>
-                    <option value="Travel">Travel</option>
-                    <option value="Food">Food</option>
-                </select>
+                <GenreFilter 
+        value={genreFilter}
+        onChange={(e) => setGenreFilter(e.target.value)}
+      />
 
             </div>
             {displayedPosts.length >0 ? (
