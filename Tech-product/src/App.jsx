@@ -1,16 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import PhoneShowcase from "./components/PhoneShowcase/PhoneShowcase";
+import Colors from "./components/Colors/Colors";
+import Pricing from "./components/Pricing/Pricing";
+import OrderCTA from "./components/OrderCTA/OrderCTA";
+import Footer from "./components/Footer/Footer";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-    <p className="text-2xl font-bold text-blue-500">Hello from App.jsx!</p>
-    </>
-  )
+    <div className="min-h-screen bg-[#050a14]">
+      <Navbar />
+      <Hero />
+      <PhoneShowcase />
+      <Colors />
+      <Pricing />
+      <OrderCTA />
+      <Footer />
+    </div>
+  );
 }
-
-export default App

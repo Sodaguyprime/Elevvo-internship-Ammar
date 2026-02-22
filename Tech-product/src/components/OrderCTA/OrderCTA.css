@@ -1,0 +1,49 @@
+.order-section {
+  background: #07101f;
+}
+
+.order-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 70% at 50% 50%, rgba(59,130,246,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.order-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(59,130,246,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59,130,246,0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 70% 80% at 50% 50%, black 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.order-cta-text {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4, #a5f3fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.order-btn-main {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  box-shadow: 0 0 50px rgba(59,130,246,0.5), 0 20px 60px rgba(59,130,246,0.25);
+  transition: all 0.3s ease;
+  letter-spacing: 0.08em;
+}
+.order-btn-main:hover {
+  box-shadow: 0 0 80px rgba(59,130,246,0.7), 0 20px 80px rgba(59,130,246,0.35);
+  transform: translateY(-3px) scale(1.02);
+}
+
+.order-btn-ghost {
+  border: 1px solid rgba(255,255,255,0.12);
+  transition: all 0.3s ease;
+}
+.order-btn-ghost:hover {
+  border-color: rgba(59,130,246,0.4);
+  color: #fff;
+  background: rgba(59,130,246,0.08);
+}

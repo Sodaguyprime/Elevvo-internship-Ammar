@@ -1,16 +1,52 @@
-# React + Vite
+# Nova Phantom X – Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium dark-themed React + Tailwind product landing page for **Nova** selling the **Phantom X** phone.
 
-Currently, two official plugins are available:
+## Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## ⚠️ Image Setup (Required)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Place your 4 images inside `public/phone-Images/` with these **exact filenames**:
 
-## Expanding the ESLint configuration
+```
+public/
+└── phone-Images/
+    ├── fictional phone blue.jpg     ← used in Hero (right side) + Colors tab
+    ├── fictional phone front.jpg    ← used in PhoneShowcase (left side, with specs)
+    ├── fictional phone pink.jpg     ← used in Colors tab
+    └── fictional phone green.jpg   ← used in Colors tab
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Page Sections
+
+| Component | Section |
+|---|---|
+| `Navbar` | Fixed nav with Order Now button |
+| `Hero` | Big headline left · Blue phone right |
+| `PhoneShowcase` | Front phone left · Full specs right |
+| `Colors` | Tab switcher: Blue / Pink / Green |
+| `Pricing` | 3 cards: Phantom X / Pro / Ultra with different specs & prices |
+| `OrderCTA` | Big "ORDER NOW" call to action |
+| `Footer` | Links + copyright |
+
+## File Structure
+
+```
+src/
+├── App.jsx
+├── index.css
+├── main.jsx
+└── components/
+    ├── Navbar/    Navbar.jsx + Navbar.css
+    ├── Hero/      Hero.jsx + Hero.css
+    ├── PhoneShowcase/  PhoneShowcase.jsx + PhoneShowcase.css
+    ├── Colors/    Colors.jsx + Colors.css
+    ├── Pricing/   Pricing.jsx + Pricing.css
+    ├── OrderCTA/  OrderCTA.jsx + OrderCTA.css
+    └── Footer/    Footer.jsx + Footer.css
+```

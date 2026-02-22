@@ -1,0 +1,53 @@
+.pricing-section {
+  background: #050a14;
+}
+
+.pricing-bg-orb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(59,130,246,0.06) 0%, transparent 65%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.pricing-gradient-text {
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pricing-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.pricing-card:not(.pricing-card-active):hover {
+  border-color: rgba(255,255,255,0.15);
+  transform: translateY(-4px);
+}
+
+.pricing-card-active {
+  border: 1px solid;
+  transform: translateY(-8px) scale(1.02);
+}
+
+.pricing-cta-btn {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #94a3b8;
+}
+
+.pricing-card-active .pricing-cta-btn {
+  border: none;
+}
+
+.pricing-cta-btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}

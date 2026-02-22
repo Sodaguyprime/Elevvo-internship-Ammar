@@ -1,0 +1,17 @@
+.navbar {
+  background: rgba(5, 10, 20, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.navbar-cta {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-cta:hover {
+  box-shadow: 0 0 32px rgba(59, 130, 246, 0.7);
+  transform: translateY(-1px);
+}

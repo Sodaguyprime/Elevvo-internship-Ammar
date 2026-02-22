@@ -1,0 +1,139 @@
+.hero-section {
+  background: #050a14;
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
+}
+
+.hero-orb {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(59,130,246,0.18) 0%, rgba(6,182,212,0.08) 40%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: orbPulse 6s ease-in-out infinite;
+}
+
+@keyframes orbPulse {
+  0%, 100% { transform: translateY(-50%) scale(1); opacity: 1; }
+  50% { transform: translateY(-52%) scale(1.06); opacity: 0.8; }
+}
+
+.hero-phantom-text {
+  background: linear-gradient(90deg, #3b82f6, #06b6d4, #a5f3fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-order-btn {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+  transition: all 0.3s ease;
+}
+.hero-order-btn:hover {
+  box-shadow: 0 0 50px rgba(59, 130, 246, 0.8);
+  transform: translateY(-2px);
+}
+
+.hero-specs-btn {
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: all 0.3s ease;
+}
+.hero-specs-btn:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+  color: #fff;
+  background: rgba(59, 130, 246, 0.08);
+}
+
+/* Phone on right */
+.hero-right {
+  position: relative;
+}
+
+.hero-phone-glow {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(59,130,246,0.35) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+  animation: glowBreath 4s ease-in-out infinite;
+}
+
+@keyframes glowBreath {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+.hero-phone-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  z-index: 0;
+  animation: ringExpand 4s ease-in-out infinite;
+}
+
+.hero-ring-1 {
+  width: 420px;
+  height: 420px;
+  animation-delay: 0s;
+}
+
+.hero-ring-2 {
+  width: 520px;
+  height: 520px;
+  animation-delay: 1s;
+  border-color: rgba(6, 182, 212, 0.12);
+}
+
+@keyframes ringExpand {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.04); opacity: 1; }
+}
+
+.hero-phone-img {
+  width: 280px;
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 30px 60px rgba(59, 130, 246, 0.5)) drop-shadow(0 0 120px rgba(59,130,246,0.2));
+  animation: phoneFloat 6s ease-in-out infinite;
+  border-radius: 32px;
+}
+
+@keyframes phoneFloat {
+  0%, 100% { transform: translateY(0px) rotate(-2deg); }
+  50% { transform: translateY(-18px) rotate(-1deg); }
+}
+
+.hero-badge {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(59,130,246,0.3);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 14px 20px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+
+.hero-bottom-fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(to top, #050a14, transparent);
+  pointer-events: none;
+}
