@@ -22,21 +22,36 @@
 
 .colors-phone-glow {
   position: absolute;
-  width: 350px;
-  height: 350px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   transition: all 0.6s ease;
 }
 
+@media (min-width: 768px) {
+  .colors-phone-glow {
+    width: 350px;
+    height: 350px;
+  }
+}
+
 .colors-phone-img {
-  width: 260px;
-  max-width: 85%;
+  width: 180px;
+  max-width: 70%;
   height: auto;
-  border-radius: 32px;
+  border-radius: 28px;
   position: relative;
   z-index: 1;
   transition: filter 0.5s ease;
   animation: colorFloat 6s ease-in-out infinite;
+}
+
+@media (min-width: 768px) {
+  .colors-phone-img {
+    width: 260px;
+    max-width: 85%;
+    border-radius: 32px;
+  }
 }
 
 @keyframes colorFloat {
