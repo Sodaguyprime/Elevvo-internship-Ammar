@@ -1,3 +1,4 @@
+import { ThemeProvider } from "./ThemeContext";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import PhoneShowcase from "./components/PhoneShowcase/PhoneShowcase";
@@ -8,14 +9,16 @@ import Footer from "./components/Footer/Footer";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#050a14]">
-      <Navbar />
-      <Hero />
-      <PhoneShowcase />
-      <Colors />
-      <Pricing />
-      <OrderCTA />
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="min-h-screen" style={{ background: 'var(--bg-primary)' }}>
+        <Navbar />
+        <Hero />
+        <PhoneShowcase />
+        <Colors />
+        <Pricing />
+        <OrderCTA />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }

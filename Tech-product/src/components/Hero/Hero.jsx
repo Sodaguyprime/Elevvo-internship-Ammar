@@ -26,28 +26,28 @@ export default function Hero() {
 
           {/* Floating badge */}
           <div className="hero-badge absolute bottom-4 right-4 md:bottom-16 md:-right-4">
-            <span className="text-xl md:text-2xl font-black text-white block">NEW</span>
-            <span className="text-blue-400 text-xs font-bold uppercase tracking-widest">2026</span>
+            <span className="text-xl md:text-2xl font-black block hero-badge-new">NEW</span>
+            <span className="text-xs font-bold uppercase tracking-widest hero-badge-year">2026</span>
           </div>
         </div>
 
         {/* LEFT — copy */}
         <div className="hero-left flex flex-col justify-center md:order-1 w-full">
           <div className="hero-eyebrow flex items-center gap-3 mb-4 md:mb-6">
-            <div className="w-8 h-px bg-blue-500" />
-            <span className="text-blue-400 text-xs font-bold uppercase tracking-[0.3em]">Introducing</span>
+            <div className="w-8 h-px hero-eyebrow-line" />
+            <span className="text-xs font-bold uppercase tracking-[0.3em] hero-eyebrow-label">Introducing</span>
           </div>
 
-          <h1 className="font-display text-[clamp(3.5rem,15vw,9rem)] leading-none text-white mb-1 md:mb-2">
+          <h1 className="font-display text-[clamp(3.5rem,15vw,9rem)] leading-none mb-1 md:mb-2 hero-title">
             NOVA
           </h1>
           <h2 className="font-display text-[clamp(2rem,9vw,5.5rem)] leading-none hero-phantom-text mb-6 md:mb-8">
             PHANTOM X
           </h2>
 
-          <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-md mb-8 md:mb-10 font-light">
+          <p className="text-base md:text-lg leading-relaxed max-w-md mb-8 md:mb-10 font-light hero-body">
             Engineered at the edge of what's possible. The Phantom X doesn't follow the rules —
-            it rewrites them. Titanium frame. Quantum camera. <span className="text-white font-medium">Yours.</span>
+            it rewrites them. Titanium frame. Quantum camera. <span className="font-medium hero-title">Yours.</span>
           </p>
 
           <div className="flex flex-row gap-3 items-start">
@@ -59,18 +59,18 @@ export default function Hero() {
             </a>
             <a
               href="#specs"
-              className="hero-specs-btn font-medium text-sm md:text-base px-7 md:px-10 py-3.5 md:py-4 rounded-full text-slate-300 whitespace-nowrap"
+              className="hero-specs-btn font-medium text-sm md:text-base px-7 md:px-10 py-3.5 md:py-4 rounded-full whitespace-nowrap"
             >
               View Specs
             </a>
           </div>
 
           {/* Stat strip */}
-          <div className="hero-stats flex gap-6 md:gap-10 mt-10 md:mt-16 pt-8 md:pt-10 border-t border-white/10">
+          <div className="hero-stats flex gap-6 md:gap-10 mt-10 md:mt-16 pt-8 md:pt-10 border-t hero-stats-divider">
             {[['6.8"', "Super AMOLED"], ["200MP", "AI Camera"], ["5800mAh", "Battery"]].map(([val, label]) => (
               <div key={label}>
-                <p className="text-white font-bold text-lg md:text-xl">{val}</p>
-                <p className="text-slate-500 text-xs mt-1">{label}</p>
+                <p className="font-bold text-lg md:text-xl hero-stat-val">{val}</p>
+                <p className="text-xs mt-1 hero-stat-label">{label}</p>
               </div>
             ))}
           </div>

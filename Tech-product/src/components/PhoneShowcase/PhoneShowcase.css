@@ -1,5 +1,5 @@
 .showcase-section {
-  background: #050a14;
+  background: var(--bg-primary);
 }
 
 .showcase-bg-line {
@@ -41,12 +41,12 @@
   50% { transform: translateY(-14px); }
 }
 
-.showcase-label {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
+.showcase-eyebrow {
+  color: var(--text-accent);
+}
+
+.showcase-title {
+  color: var(--text-primary);
 }
 
 .showcase-gradient-text {
@@ -57,23 +57,36 @@
 }
 
 .spec-group {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(59,130,246,0.1);
+  background: var(--spec-bg);
+  border: 1px solid var(--spec-border);
   border-radius: 16px;
   padding: 16px 18px;
   transition: border-color 0.3s ease, background 0.3s ease;
+  backdrop-filter: blur(8px);
 }
 
 .spec-group:hover {
-  border-color: rgba(59,130,246,0.3);
-  background: rgba(59,130,246,0.05);
+  border-color: var(--spec-hover-border);
+  background: var(--spec-hover-bg);
 }
 
 .spec-group-header {
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid var(--border-subtle);
   padding-bottom: 10px;
+}
+
+.spec-group-name {
+  color: var(--text-primary);
 }
 
 .spec-row {
   padding: 6px 0;
+}
+
+.spec-key {
+  color: var(--text-muted);
+}
+
+.spec-val {
+  color: var(--text-secondary);
 }

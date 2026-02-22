@@ -52,29 +52,29 @@ export default function Colors() {
         <div className="text-center mb-10 md:mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="w-8 h-px bg-blue-500" />
-            <span className="text-blue-400 text-xs font-bold uppercase tracking-[0.3em]">Finishes</span>
+            <span className="text-xs font-bold uppercase tracking-[0.3em] colors-eyebrow">Finishes</span>
             <div className="w-8 h-px bg-blue-500" />
           </div>
-          <h2 className="font-display text-5xl md:text-7xl lg:text-8xl text-white leading-none">CHOOSE</h2>
+          <h2 className="font-display text-5xl md:text-7xl lg:text-8xl leading-none colors-title">CHOOSE</h2>
           <h2 className="font-display text-5xl md:text-7xl lg:text-8xl leading-none colors-gradient-text">YOUR COLOR</h2>
         </div>
 
-        {/* Color tabs — pill buttons on mobile */}
+        {/* Color tabs */}
         <div className="flex justify-center gap-2 md:gap-4 mb-10 md:mb-14 flex-wrap">
           {colorOptions.map((c, i) => (
             <button
               key={c.slug}
               onClick={() => setActive(i)}
               className={`color-tab relative flex items-center gap-2 px-4 md:px-6 py-2.5 md:py-3 rounded-full font-semibold text-xs md:text-sm transition-all duration-300 ${
-                active === i ? "color-tab-active text-white" : "text-slate-400 hover:text-white"
+                active === i ? "color-tab-active" : ""
               }`}
               style={active === i ? {
                 background: c.bg,
                 borderColor: c.border,
                 boxShadow: `0 0 20px ${c.glow}`,
+                color: c.accent,
               } : {}}
             >
-              {/* Color dot */}
               <span
                 className="w-3 h-3 md:w-4 md:h-4 rounded-full flex-shrink-0"
                 style={{ background: c.accent, boxShadow: `0 0 8px ${c.glow}` }}
@@ -92,7 +92,7 @@ export default function Colors() {
           ))}
         </div>
 
-        {/* Phone display + description — stacked on mobile */}
+        {/* Phone display + description */}
         <div className="colors-display flex flex-col md:grid md:grid-cols-2 gap-10 md:gap-16 items-center">
 
           {/* Phone image */}
@@ -113,7 +113,7 @@ export default function Colors() {
           {/* Info */}
           <div className="colors-info text-center md:text-left w-full">
             <div
-              className="colors-color-chip w-16 h-2 rounded-full mb-4 md:mb-6 mx-auto md:mx-0"
+              className="w-16 h-2 rounded-full mb-4 md:mb-6 mx-auto md:mx-0"
               style={{ background: `linear-gradient(90deg, ${color.accent}, ${color.glow})` }}
             />
             <h3
@@ -122,7 +122,7 @@ export default function Colors() {
             >
               {color.name.toUpperCase()}
             </h3>
-            <p className="text-slate-400 text-base md:text-lg leading-relaxed mb-6 md:mb-8 max-w-md mx-auto md:mx-0 font-light">
+            <p className="text-base md:text-lg leading-relaxed mb-6 md:mb-8 max-w-md mx-auto md:mx-0 font-light colors-desc">
               {color.description}
             </p>
 

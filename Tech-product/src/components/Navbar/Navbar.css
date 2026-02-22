@@ -1,8 +1,20 @@
 .navbar {
-  background: rgba(5, 10, 20, 0.7);
+  background: var(--nav-bg);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+  border-bottom: 1px solid var(--nav-border);
+}
+
+.navbar-logo-text {
+  color: var(--text-primary);
+}
+
+.navbar-link {
+  color: var(--text-secondary);
+}
+
+.navbar-link:hover {
+  color: var(--text-primary);
 }
 
 .navbar-cta {

@@ -1,5 +1,6 @@
 import "./PhoneShowcase.css";
 import Front from './front.png'
+
 const specs = [
   {
     category: "Display",
@@ -59,16 +60,15 @@ export default function PhoneShowcase() {
             alt="Nova Phantom X – Front View"
             className="showcase-phone-img"
           />
-          
         </div>
 
         {/* RIGHT — specs */}
         <div className="showcase-right">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-8 h-px bg-blue-500" />
-            <span className="text-blue-400 text-xs font-bold uppercase tracking-[0.3em]">Full Specifications</span>
+            <span className="text-xs font-bold uppercase tracking-[0.3em] showcase-eyebrow">Full Specifications</span>
           </div>
-          <h2 className="font-display text-6xl md:text-7xl text-white mb-3 leading-none">WHAT'S</h2>
+          <h2 className="font-display text-6xl md:text-7xl mb-3 leading-none showcase-title">WHAT'S</h2>
           <h2 className="font-display text-6xl md:text-7xl mb-10 leading-none showcase-gradient-text">INSIDE</h2>
 
           <div className="grid grid-cols-1 gap-5">
@@ -76,13 +76,13 @@ export default function PhoneShowcase() {
               <div key={group.category} className="spec-group">
                 <div className="spec-group-header flex items-center gap-3 mb-3">
                   <span className="text-blue-400 text-lg">{group.icon}</span>
-                  <span className="text-white font-bold text-sm uppercase tracking-wider">{group.category}</span>
+                  <span className="font-bold text-sm uppercase tracking-wider spec-group-name">{group.category}</span>
                 </div>
                 <div className="spec-rows grid grid-cols-2 gap-2">
                   {group.items.map(([key, val]) => (
                     <div key={key} className="spec-row">
-                      <span className="text-slate-500 text-xs block mb-0.5">{key}</span>
-                      <span className="text-slate-200 text-sm font-medium">{val}</span>
+                      <span className="text-xs block mb-0.5 spec-key">{key}</span>
+                      <span className="text-sm font-medium spec-val">{val}</span>
                     </div>
                   ))}
                 </div>

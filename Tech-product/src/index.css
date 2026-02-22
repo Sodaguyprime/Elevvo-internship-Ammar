@@ -2,25 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --nova-blue: #3b82f6;
-  --nova-cyan: #06b6d4;
-  --nova-glow: rgba(59, 130, 246, 0.5);
+/* ===== DARK THEME (default) ===== */
+:root,
+[data-theme="dark"] {
+  --bg-primary: #050a14;
+  --bg-secondary: #07101f;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --bg-card-hover: rgba(59, 130, 246, 0.05);
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-blue: rgba(59, 130, 246, 0.1);
+  --border-blue-strong: rgba(59, 130, 246, 0.3);
+
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #475569;
+  --text-accent: #60a5fa;
+
+  --nav-bg: rgba(5, 10, 20, 0.7);
+  --nav-border: rgba(59, 130, 246, 0.1);
+
+  --grid-line: rgba(59, 130, 246, 0.05);
+  --glow-primary: rgba(59, 130, 246, 0.18);
+
+  --spec-bg: rgba(255, 255, 255, 0.03);
+  --spec-border: rgba(59, 130, 246, 0.1);
+  --spec-hover-border: rgba(59, 130, 246, 0.3);
+  --spec-hover-bg: rgba(59, 130, 246, 0.05);
+
+  --footer-bg: #050a14;
+  --footer-border: rgba(255, 255, 255, 0.05);
+
+  --toggle-track: rgba(255, 255, 255, 0.08);
+}
+
+/* ===== LIGHT THEME ===== */
+[data-theme="light"] {
+  --bg-primary: #f0f4ff;
+  --bg-secondary: #e8edf8;
+  --bg-card: rgba(255, 255, 255, 0.7);
+  --bg-card-hover: rgba(59, 130, 246, 0.06);
+
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-blue: rgba(59, 130, 246, 0.2);
+  --border-blue-strong: rgba(59, 130, 246, 0.5);
+
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #94a3b8;
+  --text-accent: #2563eb;
+
+  --nav-bg: rgba(240, 244, 255, 0.85);
+  --nav-border: rgba(59, 130, 246, 0.15);
+
+  --grid-line: rgba(59, 130, 246, 0.08);
+  --glow-primary: rgba(59, 130, 246, 0.12);
+
+  --spec-bg: rgba(255, 255, 255, 0.6);
+  --spec-border: rgba(59, 130, 246, 0.15);
+  --spec-hover-border: rgba(59, 130, 246, 0.4);
+  --spec-hover-bg: rgba(59, 130, 246, 0.06);
+
+  --footer-bg: #e8edf8;
+  --footer-border: rgba(0, 0, 0, 0.08);
+
+  --toggle-track: rgba(59, 130, 246, 0.12);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  transition: background-color 0.4s ease;
+}
 
 body {
   font-family: 'Outfit', system-ui, sans-serif;
-  background: #050a14;
-  color: #f1f5f9;
+  background: var(--bg-primary);
+  color: var(--text-primary);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .font-display {
   font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 0.05em;
+}
+
+/* Global theme transitions */
+*, *::before, *::after {
+  transition-property: background-color, border-color, color, box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+/* Override transition for animations that shouldn't inherit it */
+@keyframes phoneFloat,
+@keyframes orbPulse,
+@keyframes glowBreath,
+@keyframes ringExpand,
+@keyframes colorFloat,
+@keyframes showcaseFloat {
+  transition: none;
 }

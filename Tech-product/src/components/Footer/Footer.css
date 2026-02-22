@@ -1,3 +1,20 @@
 .footer-section {
-  background: #050a14;
+  background: var(--footer-bg);
+}
+
+.footer-logo-text {
+  color: var(--text-primary);
+}
+
+.footer-copy {
+  color: var(--text-muted);
+}
+
+.footer-link {
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: var(--text-primary);
 }

@@ -10,16 +10,16 @@ export default function OrderCTA() {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="flex items-center justify-center gap-3 mb-6">
           <div className="w-8 h-px bg-blue-400" />
-          <span className="text-blue-400 text-xs font-bold uppercase tracking-[0.3em]">Limited Availability</span>
+          <span className="text-xs font-bold uppercase tracking-[0.3em] order-eyebrow">Limited Availability</span>
           <div className="w-8 h-px bg-blue-400" />
         </div>
 
-        <h2 className="font-display text-[clamp(4rem,11vw,8rem)] leading-none text-white mb-4">
+        <h2 className="font-display text-[clamp(4rem,11vw,8rem)] leading-none mb-4 order-title">
           DON'T<br />
           <span className="order-cta-text">WAIT.</span>
         </h2>
 
-        <p className="text-slate-400 text-xl mb-12 max-w-xl mx-auto font-light leading-relaxed">
+        <p className="text-xl mb-12 max-w-xl mx-auto font-light leading-relaxed order-subtitle">
           The Nova Phantom X ships in 3–5 business days. Reserve yours now before the first batch sells out.
         </p>
 
@@ -28,20 +28,20 @@ export default function OrderCTA() {
           <a href="#pricing" className="order-btn-main font-black text-xl px-14 py-5 rounded-full text-white">
             ORDER NOW
           </a>
-          <a href="#specs" className="order-btn-ghost font-medium text-base px-10 py-5 rounded-full text-slate-300">
+          <a href="#specs" className="order-btn-ghost font-medium text-base px-10 py-5 rounded-full">
             Compare Models
           </a>
         </div>
 
         {/* Reassurance row */}
-        <div className="order-trust flex flex-wrap justify-center gap-8 text-sm text-slate-500">
+        <div className="order-trust flex flex-wrap justify-center gap-8 text-sm">
           {[
             ["🚚", "Free Shipping"],
             ["↩️", "14-Day Returns"],
             ["🔒", "Secure Checkout"],
             ["⭐", "2-Year Warranty"],
           ].map(([icon, text]) => (
-            <div key={text} className="flex items-center gap-2">
+            <div key={text} className="flex items-center gap-2 order-trust-item">
               <span>{icon}</span>
               <span>{text}</span>
             </div>

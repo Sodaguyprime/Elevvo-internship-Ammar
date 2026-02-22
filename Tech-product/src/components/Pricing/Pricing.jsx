@@ -73,10 +73,10 @@ export default function Pricing() {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="w-8 h-px bg-blue-500" />
-            <span className="text-blue-400 text-xs font-bold uppercase tracking-[0.3em]">Pricing</span>
+            <span className="text-xs font-bold uppercase tracking-[0.3em] pricing-eyebrow">Pricing</span>
             <div className="w-8 h-px bg-blue-500" />
           </div>
-          <h2 className="font-display text-7xl md:text-8xl text-white leading-none">YOUR</h2>
+          <h2 className="font-display text-7xl md:text-8xl leading-none pricing-title">YOUR</h2>
           <h2 className="font-display text-7xl md:text-8xl pricing-gradient-text leading-none">PHANTOM</h2>
         </div>
 
@@ -90,8 +90,8 @@ export default function Pricing() {
               }`}
               style={selected === i ? {
                 borderColor: tier.accent,
-                boxShadow: `0 0 60px ${tier.glow}, inset 0 0 60px rgba(0,0,0,0.2)`,
-                background: `linear-gradient(160deg, ${tier.glow.replace('0.35','0.08')}, rgba(5,10,20,0.95))`,
+                boxShadow: `0 0 60px ${tier.glow}, inset 0 0 60px rgba(0,0,0,0.1)`,
+                background: `linear-gradient(160deg, ${tier.glow.replace('0.35','0.06')}, var(--bg-card))`,
               } : {}}
             >
               {tier.badge && (
@@ -112,14 +112,14 @@ export default function Pricing() {
                 <p className="text-xs uppercase tracking-widest mb-1" style={{ color: tier.accent }}>
                   {tier.tagline}
                 </p>
-                <h3 className="font-display text-3xl text-white">{tier.name.toUpperCase()}</h3>
-                <p className="text-slate-500 text-sm mt-1">{tier.ram} · {tier.storage}</p>
+                <h3 className="font-display text-3xl pricing-card-name">{tier.name.toUpperCase()}</h3>
+                <p className="text-sm mt-1 pricing-card-sub">{tier.ram} · {tier.storage}</p>
               </div>
 
               {/* Price */}
               <div className="mb-8 flex items-end gap-1">
-                <span className="text-slate-400 text-xl mb-1">$</span>
-                <span className="text-5xl font-black text-white">{tier.price}</span>
+                <span className="text-xl mb-1 pricing-price-sym">$</span>
+                <span className="text-5xl font-black pricing-price">{tier.price}</span>
               </div>
 
               {/* Features */}
@@ -130,7 +130,7 @@ export default function Pricing() {
                       <circle cx="8" cy="8" r="7" stroke={tier.accent} strokeWidth="1.5" />
                       <polyline points="5,8 7,10 11,6" stroke={tier.accent} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                    <span className="text-slate-300 text-sm leading-snug">{f}</span>
+                    <span className="text-sm leading-snug pricing-feature">{f}</span>
                   </li>
                 ))}
               </ul>
@@ -152,7 +152,7 @@ export default function Pricing() {
         </div>
 
         {/* Fine print */}
-        <p className="text-center text-slate-600 text-sm mt-10">
+        <p className="text-center text-sm mt-10 pricing-fine-print">
           Prices shown before taxes. Free shipping on all orders. 14-day returns.
         </p>
       </div>
