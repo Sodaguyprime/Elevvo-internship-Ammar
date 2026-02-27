@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { MdDashboard, MdFolder, MdManageAccounts } from "react-icons/md";
 import { IoChevronBack } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 
 const navItems = [
-  { label: "Dashboard",        key: "Dashboard",        Icon: MdDashboard      },
-  { label: "Projects",         key: "Projects",         Icon: MdFolder         },
-  { label: "Profile Settings", key: "Profile Settings", Icon: MdManageAccounts },
+  { label: "Dashboard",        key: "Dashboard",        Icon: MdDashboard,      path: "/"                 },
+  { label: "Projects",         key: "Projects",         Icon: MdFolder,         path: "/projects"         },
+  { label: "Profile Settings", key: "Profile Settings", Icon: MdManageAccounts, path: "/profile-settings" },
 ];
 
 export default function SideBar() {
@@ -64,10 +65,10 @@ export default function SideBar() {
         {navItems.map(({ label, key, Icon }) => {
           const isActive = active === key;
           return (
-            <button
+            <NavLink
+              to={key === "Dashboard" ? "/" : `/${key.toLowerCase().replace(/\s+/g, "-")}`}
               key={key}
-              onClick={() => setActive(key)}
-              className={`flex items-center gap-3 rounded-xl px-3 py-2.5 w-full transition-all duration-150 group
+              className={({ isActive }) => `flex items-center gap-3 rounded-xl px-3 py-2.5 w-full transition-all duration-150 group
                 ${isActive
                   ? "bg-gray-900 text-white shadow-sm"
                   : "text-gray-500 hover:bg-gray-50 hover:text-gray-800"
@@ -80,8 +81,8 @@ export default function SideBar() {
               >
                 {label}
               </span>
-            </button>
-          );
+            </NavLink>
+          )
         })}
       </nav>
 
