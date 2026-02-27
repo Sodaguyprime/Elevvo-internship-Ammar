@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { MdMenu, MdNotificationsNone, MdAdd } from "react-icons/md";
-
+import Avatar from "/Avatar.png";
 const pageTitles = {
   "/":                 "Dashboard",
   "/projects":         "Projects",
@@ -70,10 +70,10 @@ export default function TopBar({ onMenuClick }) {
 
         {/* Avatar */}
         <button
-          className="flex items-center justify-center w-9 h-9 rounded-full bg-gradient-to-br from-gray-300 to-gray-400 hover:ring-2 hover:ring-gray-200 transition-all duration-150 flex-shrink-0"
+          className="flex items-center justify-center w-11 h-11 rounded-full bg-gradient-to-br from-gray-300 to-gray-400 hover:ring-2 hover:ring-gray-200 transition-all duration-150 flex-shrink-0"
           aria-label="Profile"
         >
-          {/* Empty — will hold initials or image later */}
+          <img src={Avatar} alt="User Avatar" className="w-full h-full rounded-full object-cover" />
         </button>
 
       </div>

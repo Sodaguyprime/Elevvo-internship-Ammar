@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { MdDashboard, MdFolder, MdManageAccounts } from "react-icons/md";
 import { IoChevronBack } from "react-icons/io5";
-
+import Avatar from "/Avatar.png";
 const navItems = [
   { label: "Dashboard",        Icon: MdDashboard,      path: "/"                 },
   { label: "Projects",         Icon: MdFolder,         path: "/projects"         },
@@ -102,18 +102,7 @@ export default function SideBar({ mobileOpen, onMobileClose }) {
         </nav>
 
         {/* ── User card ── */}
-        <div className="px-3 pb-5 mt-auto">
-          <div className="rounded-xl bg-gray-50 p-3 flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-gray-300 to-gray-400 flex-shrink-0" />
-            <div
-              className="overflow-hidden transition-all duration-300 ease-in-out"
-              style={{ opacity: expanded ? 1 : 0, maxWidth: expanded ? 160 : 0 }}
-            >
-              <p className="text-xs font-semibold text-gray-800 whitespace-nowrap"></p>
-              <p className="text-[11px] text-gray-400 whitespace-nowrap"></p>
-            </div>
-          </div>
-        </div>
+       
       </aside>
     </>
   );

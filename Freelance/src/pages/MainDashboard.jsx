@@ -1,5 +1,6 @@
 import MockData from '../data/MockData';
-
+import EarningsGoalsChart from '../components/DashboardComponents/EarningsGoalsChart';
+import OngoingProjects from '../components/DashboardComponents/OngoingProjects';
 const MainDashboard = () => {
     return (
         <div className="p-6">
@@ -8,6 +9,8 @@ const MainDashboard = () => {
             <p className="text-gray-600 mt-1"> Monthly Goal: ${MockData.stats.MonthlyGoal}</p>
             <p className="text-gray-600 mt-1"> Active Clients: {MockData.stats.activeClients}</p>
             <p className="text-gray-600 mt-1"> Earnings This Month: ${MockData.stats.earnings}</p>
+            <EarningsGoalsChart />
+            <OngoingProjects />
         </div>
     )
 }   
