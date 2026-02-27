@@ -1,0 +1,86 @@
+{
+  "user": {
+    "name": "Alex Johnson",
+    "email": "alex@freelanceco.com",
+    "role": "Freelancer",
+    "avatar": null
+  },
+
+  "stats": {
+    "totalProjects": 12,
+    "earnings": 24650,
+    "MonthlyGoal": 30000,
+    "activeClients": 4
+  },
+
+  "recentActivity": [
+    { "id": 1, "type": "payment",  "message": "Payment received from Acme Corp",        "amount": 2500,  "date": "2026-02-25" },
+    { "id": 2, "type": "project",  "message": "New project started with Bright Media",   "amount": null,  "date": "2026-02-23" },
+    { "id": 3, "type": "task",     "message": "Logo design task marked as complete",     "amount": null,  "date": "2026-02-21" },
+    { "id": 4, "type": "payment",  "message": "Invoice #1042 paid by Nova Studios",      "amount": 1800,  "date": "2026-02-18" },
+    { "id": 5, "type": "project",  "message": "Proposal sent to Greenleaf Agency",       "amount": null,  "date": "2026-02-15" }
+  ],
+
+  "projects": [
+    {
+      "id": 1,
+      "name": "Acme Corp — Website Redesign",
+      "client": "Acme Corp",
+      "status": "In Progress",
+      "deadline": "2026-03-15",
+      "value": 5000,
+      "tasksTotal": 8,
+      "tasksComplete": 5
+    },
+    {
+      "id": 2,
+      "name": "Bright Media — Brand Identity",
+      "client": "Bright Media",
+      "status": "In Progress",
+      "deadline": "2026-03-28",
+      "value": 3200,
+      "tasksTotal": 6,
+      "tasksComplete": 2
+    },
+    {
+      "id": 3,
+      "name": "Nova Studios — Mobile App UI",
+      "client": "Nova Studios",
+      "status": "Review",
+      "deadline": "2026-02-28",
+      "value": 7500,
+      "tasksTotal": 12,
+      "tasksComplete": 11
+    },
+    {
+      "id": 4,
+      "name": "Greenleaf Agency — SEO Dashboard",
+      "client": "Greenleaf Agency",
+      "status": "Pending",
+      "deadline": "2026-04-10",
+      "value": 2800,
+      "tasksTotal": 5,
+      "tasksComplete": 0
+    },
+    {
+      "id": 5,
+      "name": "Orion Tech — API Integration",
+      "client": "Orion Tech",
+      "status": "Completed",
+      "deadline": "2026-02-01",
+      "value": 4200,
+      "tasksTotal": 9,
+      "tasksComplete": 9
+    },
+    {
+      "id": 6,
+      "name": "Lumina Co — Landing Page",
+      "client": "Lumina Co",
+      "status": "Completed",
+      "deadline": "2026-01-20",
+      "value": 1950,
+      "tasksTotal": 4,
+      "tasksComplete": 4
+    }
+  ]
+}
