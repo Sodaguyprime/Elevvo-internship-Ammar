@@ -16,7 +16,7 @@ function formatDate(dateStr) {
 }
 
 export default function RecentActivity() {
-  const activities = mockData.recentActivity.slice(0, 3);
+  const activities = mockData.recentActivity.slice(0, 5);
 
   return (
     <div
