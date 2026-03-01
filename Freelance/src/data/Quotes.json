@@ -1,0 +1,159 @@
+{
+  "quotes": [
+    {
+      "id": 1,
+      "text": "The secret of getting ahead is getting started.",
+      "author": "Mark Twain"
+    },
+    {
+      "id": 2,
+      "text": "Your time is limited, don't waste it living someone else's life.",
+      "author": "Steve Jobs"
+    },
+    {
+      "id": 3,
+      "text": "It always seems impossible until it's done.",
+      "author": "Nelson Mandela"
+    },
+    {
+      "id": 4,
+      "text": "Don't watch the clock. Do what it does — keep going.",
+      "author": "Sam Levenson"
+    },
+    {
+      "id": 5,
+      "text": "You don't have to be great to start, but you have to start to be great.",
+      "author": "Zig Ziglar"
+    },
+    {
+      "id": 6,
+      "text": "The harder I work, the luckier I get.",
+      "author": "Samuel Goldwyn"
+    },
+    {
+      "id": 7,
+      "text": "Opportunities don't happen. You create them.",
+      "author": "Chris Grosser"
+    },
+    {
+      "id": 8,
+      "text": "Success is not the key to happiness. Happiness is the key to success.",
+      "author": "Albert Schweitzer"
+    },
+    {
+      "id": 9,
+      "text": "The only way to do great work is to love what you do.",
+      "author": "Steve Jobs"
+    },
+    {
+      "id": 10,
+      "text": "Believe you can and you're halfway there.",
+      "author": "Theodore Roosevelt"
+    },
+    {
+      "id": 11,
+      "text": "Done is better than perfect.",
+      "author": "Sheryl Sandberg"
+    },
+    {
+      "id": 12,
+      "text": "A satisfied client is the best business strategy of all.",
+      "author": "Michael LeBoeuf"
+    },
+    {
+      "id": 13,
+      "text": "Your reputation is more important than your paycheck.",
+      "author": "Congresswoman Maxine Waters"
+    },
+    {
+      "id": 14,
+      "text": "Work hard in silence. Let success make the noise.",
+      "author": "Frank Ocean"
+    },
+    {
+      "id": 15,
+      "text": "The best investment you can make is in yourself.",
+      "author": "Warren Buffett"
+    },
+    {
+      "id": 16,
+      "text": "Chase the vision, not the money. The money will end up following you.",
+      "author": "Tony Hsieh"
+    },
+    {
+      "id": 17,
+      "text": "Every accomplishment starts with the decision to try.",
+      "author": "John F. Kennedy"
+    },
+    {
+      "id": 18,
+      "text": "Quality is not an act, it is a habit.",
+      "author": "Aristotle"
+    },
+    {
+      "id": 19,
+      "text": "The expert in anything was once a beginner.",
+      "author": "Helen Hayes"
+    },
+    {
+      "id": 20,
+      "text": "Start where you are. Use what you have. Do what you can.",
+      "author": "Arthur Ashe"
+    },
+    {
+      "id": 21,
+      "text": "Freelancing is not just a job. It's a lifestyle built on discipline.",
+      "author": "Unknown"
+    },
+    {
+      "id": 22,
+      "text": "You are your own boss — act like it.",
+      "author": "Unknown"
+    },
+    {
+      "id": 23,
+      "text": "Small steps every day lead to big results over time.",
+      "author": "Unknown"
+    },
+    {
+      "id": 24,
+      "text": "Deliver more than expected and clients will never leave.",
+      "author": "Unknown"
+    },
+    {
+      "id": 25,
+      "text": "Your skills are your currency. Keep investing in them.",
+      "author": "Unknown"
+    },
+    {
+      "id": 26,
+      "text": "Deadlines are not the enemy — procrastination is.",
+      "author": "Unknown"
+    },
+    {
+      "id": 27,
+      "text": "One great client is worth ten mediocre ones.",
+      "author": "Unknown"
+    },
+    {
+      "id": 28,
+      "text": "Rest is not quitting. It's part of the process.",
+      "author": "Unknown"
+    },
+    {
+      "id": 29,
+      "text": "Your portfolio speaks louder than your pitch.",
+      "author": "Unknown"
+    },
+    {
+      "id": 30,
+      "text": "Every invoice paid is proof that your craft has value.",
+      "author": "Unknown"
+    },
+    {
+      "id": 31,
+      "text": "Consistency beats talent when talent doesn't show up.",
+      "author": "Unknown"
+    }
+  ]
+}

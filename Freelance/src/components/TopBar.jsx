@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { MdMenu, MdNotificationsNone, MdAdd } from "react-icons/md";
 import Avatar from "/Avatar.png";
+import { useAvatar } from "../context/AvatarContext";
 const pageTitles = {
   "/":                 "Dashboard",
   "/projects":         "Projects",
@@ -13,7 +14,7 @@ export default function TopBar({ onMenuClick }) {
   const [hasNotif] = useState(true); // placeholder — flip to false when cleared
 
   const title = pageTitles[pathname] ?? "Dashboard";
-
+const { avatarUrl } = useAvatar();
   return (
     <header
       className="flex items-center justify-between px-4 md:px-6 py-4 bg-white border-b border-gray-100 sticky top-0 z-10"
@@ -73,7 +74,7 @@ export default function TopBar({ onMenuClick }) {
           className="flex items-center justify-center w-11 h-11 rounded-full bg-gradient-to-br from-gray-300 to-gray-400 hover:ring-2 hover:ring-gray-200 transition-all duration-150 flex-shrink-0"
           aria-label="Profile"
         >
-          <img src={Avatar} alt="User Avatar" className="w-full h-full rounded-full object-cover" />
+          <img src={avatarUrl} alt="avatar" className="w-9 h-9 rounded-full object-cover" />
         </button>
 
       </div>

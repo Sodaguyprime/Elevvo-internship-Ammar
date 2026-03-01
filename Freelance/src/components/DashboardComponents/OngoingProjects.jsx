@@ -25,11 +25,11 @@ export default function OngoingProjects() {
 
   return (
     <div
-      className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex flex-col gap-4"
+      className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex flex-col h-full"
       style={{ fontFamily: "'DM Sans', sans-serif" }}
     >
       {/* Header */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between mb-4">
         <h2 className="text-sm font-semibold text-gray-900 uppercase tracking-widest">
           Ongoing Projects
         </h2>
@@ -38,14 +38,14 @@ export default function OngoingProjects() {
         </span>
       </div>
 
-      {/* Cards */}
-      <div className="flex flex-col gap-3">
+      {/* Cards — grow to fill space */}
+      <div className="flex flex-col gap-3 flex-1">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="flex flex-col gap-3 rounded-xl border border-gray-100 p-4 hover:bg-gray-50 transition-all duration-150"
+            className="flex flex-col gap-3 rounded-xl border border-gray-100 p-4 hover:bg-gray-50 transition-all duration-150 flex-1"
           >
-            {/* Top row: dot indicator + status badge */}
+            {/* Top: dot + status badge */}
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-orange-400 flex-shrink-0" />
@@ -53,15 +53,13 @@ export default function OngoingProjects() {
                   Project
                 </span>
               </div>
-              <span
-                className={`text-[11px] font-semibold px-2.5 py-1 rounded-lg ${statusStyles[project.status]}`}
-              >
+              <span className={`text-[11px] font-semibold px-2.5 py-1 rounded-lg ${statusStyles[project.status]}`}>
                 {project.status}
               </span>
             </div>
 
             {/* Middle: name + client */}
-            <div className="flex flex-col gap-0.5">
+            <div className="flex flex-col gap-0.5 flex-1">
               <p className="text-sm font-bold text-gray-900 leading-snug">
                 {project.name}
               </p>
@@ -74,22 +72,13 @@ export default function OngoingProjects() {
             {/* Bottom: deadline + value */}
             <div className="flex items-center justify-between">
               <div className="flex flex-col gap-0.5">
-                <span className="text-[10px] text-gray-400 uppercase tracking-wide font-medium">
-                  Due
-                </span>
-                <span
-                  className={`text-xs font-semibold ${
-                    isDueSoon(project.deadline) ? "text-red-500" : "text-gray-700"
-                  }`}
-                >
+                <span className="text-[10px] text-gray-400 uppercase tracking-wide font-medium">Due</span>
+                <span className={`text-xs font-semibold ${isDueSoon(project.deadline) ? "text-red-500" : "text-gray-700"}`}>
                   {formatDate(project.deadline)}
                 </span>
               </div>
-
               <div className="flex flex-col items-end gap-0.5">
-                <span className="text-[10px] text-gray-400 uppercase tracking-wide font-medium">
-                  Value
-                </span>
+                <span className="text-[10px] text-gray-400 uppercase tracking-wide font-medium">Value</span>
                 <span className="text-xs font-bold text-gray-900">
                   ${project.value.toLocaleString()}
                 </span>
@@ -99,10 +88,12 @@ export default function OngoingProjects() {
         ))}
       </div>
 
-      {/* Footer */}
-      <button className="text-xs font-semibold text-orange-500 hover:text-orange-600 transition-colors duration-150 text-left mt-1">
-        View all projects →
-      </button>
+      {/* Footer — always at bottom */}
+      <div className="pt-4 border-t border-gray-100 mt-2">
+        <button className="text-xs font-semibold text-orange-500 hover:text-orange-600 transition-colors duration-150 text-left">
+          View all projects →
+        </button>
+      </div>
     </div>
   );
 }

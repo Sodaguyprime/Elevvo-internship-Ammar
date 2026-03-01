@@ -6,11 +6,13 @@ import TopBar from "./components/TopBar";
 import Dashboard from "./pages/MainDashboard";
 import Projects from "./pages/ProjectsPage";
 import ProfileSettings from "./pages/ProfileSettings";
-
+import { AvatarProvider } from "./context/AvatarContext";
 function App() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
+    <AvatarProvider>
+
     <BrowserRouter>
       <div className="flex min-h-screen bg-gray-50">
 
@@ -35,6 +37,7 @@ function App() {
 
       </div>
     </BrowserRouter>
+    </AvatarProvider>
   );
 }
 
