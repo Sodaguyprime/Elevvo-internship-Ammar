@@ -30,11 +30,11 @@ export default function SideBar({ mobileOpen, onMobileClose }) {
           fontFamily: "'DM Sans', sans-serif",
         }}
         className={`
-          fixed md:relative z-30 md:z-auto
-          flex flex-col bg-white border-r border-gray-100 h-screen md:min-h-screen
-          shadow-sm overflow-visible flex-shrink-0
-          ${mobileOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}
-        `}
+  fixed md:relative md:sticky md:top-0
+  flex flex-col bg-white border-r border-gray-100 h-screen md:min-h-screen
+  shadow-sm overflow-visible flex-shrink-0
+  ${mobileOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}
+`}
       >
         {/* ── Logo row ── */}
         <div className="flex items-center gap-2.5 px-5 py-5">
