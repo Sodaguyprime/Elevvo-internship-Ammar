@@ -13,7 +13,7 @@ const formattedDate = today.toLocaleDateString("en-US", {
 export default function Quotes() {
   return (
     <div
-      className="relative bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden"
+      className="relative bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden self-start"
       style={{ fontFamily: "'DM Sans', sans-serif" }}
     >
       {/* Orange left accent bar */}

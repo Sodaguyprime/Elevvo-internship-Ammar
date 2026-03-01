@@ -1,4 +1,4 @@
-import mockData from "../../data/MockData.json";
+import { useProjects } from "../../context/ProjectsContext";
 
 const statusStyles = {
   "In Progress": "bg-blue-50 text-blue-600",
@@ -19,7 +19,9 @@ function isDueSoon(dateStr) {
 }
 
 export default function OngoingProjects() {
-  const projects = mockData.projects
+  const { projects } = useProjects();
+
+  const ongoing = projects
     .filter((p) => p.status === "In Progress" || p.status === "Review")
     .slice(0, 4);
 
@@ -34,13 +36,20 @@ export default function OngoingProjects() {
           Ongoing Projects
         </h2>
         <span className="text-xs text-gray-400 font-medium">
-          {projects.length} active
+          {ongoing.length} active
         </span>
       </div>
 
-      {/* Cards — grow to fill space */}
+      {/* Cards */}
       <div className="flex flex-col gap-3 flex-1">
-        {projects.map((project) => (
+        {ongoing.length === 0 && (
+          <div className="flex flex-col items-center justify-center flex-1 py-8 text-center">
+            <p className="text-sm font-semibold text-gray-400">No active projects</p>
+            <p className="text-xs text-gray-300 mt-1">Add a project to see it here.</p>
+          </div>
+        )}
+
+        {ongoing.map((project) => (
           <div
             key={project.id}
             className="flex flex-col gap-3 rounded-xl border border-gray-100 p-4 hover:bg-gray-50 transition-all duration-150 flex-1"
@@ -88,7 +97,7 @@ export default function OngoingProjects() {
         ))}
       </div>
 
-      {/* Footer — always at bottom */}
+      {/* Footer */}
       <div className="pt-4 border-t border-gray-100 mt-2">
         <button className="text-xs font-semibold text-orange-500 hover:text-orange-600 transition-colors duration-150 text-left">
           View all projects →

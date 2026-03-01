@@ -1,5 +1,5 @@
 import { useState } from "react";
-import mockData from "../data/MockData.json";
+import { useProjects } from "../context/ProjectsContext";
 import ProjectCard from "../components/ProjectCard";
 import ProjectRow  from "../components/ProjectRow";
 import { MdGridView, MdTableRows } from "react-icons/md";
@@ -13,13 +13,14 @@ const statusCounts = (projects) =>
   }, {});
 
 export default function ProjectsPage() {
+  const { projects } = useProjects();
   const [activeFilter, setActiveFilter] = useState("All");
-  const [view, setView]                 = useState("grid"); // "grid" | "table"
+  const [view, setView]                 = useState("grid");
 
-  const counts   = statusCounts(mockData.projects);
+  const counts   = statusCounts(projects);
   const filtered = activeFilter === "All"
-    ? mockData.projects
-    : mockData.projects.filter((p) => p.status === activeFilter);
+    ? projects
+    : projects.filter((p) => p.status === activeFilter);
 
   return (
     <div
@@ -133,7 +134,7 @@ export default function ProjectsPage() {
       {filtered.length > 0 && (
         <p className="text-xs text-gray-400 text-right">
           Showing <span className="font-semibold text-gray-600">{filtered.length}</span> of{" "}
-          <span className="font-semibold text-gray-600">{mockData.projects.length}</span> projects
+          <span className="font-semibold text-gray-600">{projects.length}</span> projects
         </p>
       )}
 

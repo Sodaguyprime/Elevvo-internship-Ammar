@@ -28,25 +28,20 @@ const MainDashboard = () => {
       </div>
 
       {/* ── Row 1: Earnings | Client Growth | Quote ── */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-start">
         <EarningsGoalsChart />
         <Growth />
         <Quotes />
       </div>
 
-      {/* ── Row 2: Recent Activity | Ongoing Projects ── */}
+      {/* ── Row 2: Ongoing Projects | Recent Activity ── */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
-
-        {/* Recent Activity — fills height of the row */}
-        <div className="flex flex-col h-full">
-          <RecentActivity />
-        </div>
-
-        {/* Ongoing Projects — fills height of the row */}
         <div className="flex flex-col h-full">
           <OngoingProjects />
         </div>
-
+        <div className="flex flex-col h-full">
+          <RecentActivity />
+        </div>
       </div>
 
     </div>
