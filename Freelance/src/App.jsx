@@ -23,10 +23,10 @@ function App() {
         />
 
         {/* Right side: topbar + page content stacked vertically */}
-        <div className="flex flex-col flex-1 min-w-0">
+        <div className="flex flex-col flex-1 min-w-0 w-full">
           <TopBar onMenuClick={() => setMobileOpen(true)} />
 
-          <main className="flex-1 overflow-auto p-6">
+          <main className="flex-1 overflow-auto p-6 ">
             <Routes>
               <Route path="/"                 element={<Dashboard />}       />
               <Route path="/projects"         element={<Projects />}        />

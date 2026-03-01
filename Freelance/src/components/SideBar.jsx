@@ -30,10 +30,11 @@ export default function SideBar({ mobileOpen, onMobileClose }) {
           fontFamily: "'DM Sans', sans-serif",
         }}
         className={`
-  fixed md:relative md:sticky md:top-0
-  flex flex-col bg-white border-r border-gray-100 h-screen md:min-h-screen
+  fixed md:sticky md:top-0 z-30 md:z-auto
+  flex flex-col bg-white border-r border-gray-100 h-screen
   shadow-sm overflow-visible flex-shrink-0
-  ${mobileOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}
+  transition-transform duration-300
+  ${mobileOpen ? "translate-x-0 pointer-events-auto" : "-translate-x-full pointer-events-none md:translate-x-0 md:pointer-events-auto"}
 `}
       >
         {/* ── Logo row ── */}
