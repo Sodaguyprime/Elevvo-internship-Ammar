@@ -63,8 +63,8 @@ export default function EarningsGoalChart() {
 
   return (
     <div
-      className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex flex-col items-center"
-      style={{ fontFamily: "'DM Sans', sans-serif", maxWidth: 320 }}
+      className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex flex-col items-center w-full"
+      style={{ fontFamily: "'DM Sans', sans-serif",  }}
     >
       {/* Title */}
       <div className="w-full flex items-center justify-between mb-4">
