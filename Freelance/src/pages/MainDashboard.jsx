@@ -1,12 +1,28 @@
 import mockData from '../data/MockData.json';
-import EarningsGoalsChart  from '../components/DashboardComponents/EarningsGoalsChart';
-import OngoingProjects     from '../components/DashboardComponents/OngoingProjects';
-import Quotes              from '../components/DashboardComponents/Quotes';
-import RecentActivity      from '../components/DashboardComponents/RecentActivity';
-import Growth              from '../components/DashboardComponents/Growth';
+import EarningsGoalsChart from '../components/DashboardComponents/EarningsGoalsChart';
+import OngoingProjects    from '../components/DashboardComponents/OngoingProjects';
+import Quotes             from '../components/DashboardComponents/Quotes';
+import RecentActivity     from '../components/DashboardComponents/RecentActivity';
+import Growth             from '../components/DashboardComponents/Growth';
 
-const MainDashboard = () => {
-  const { user } = mockData;
+/* ── Tiny stat card ─────────────────────────────────────────────────────── */
+function StatCard({ label, value, sub, accent }) {
+  return (
+    <div className="bg-white rounded-2xl border border-gray-100 shadow-sm px-5 py-4 flex flex-col gap-1 min-w-0">
+      <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400">{label}</p>
+      <p className="text-2xl font-bold text-gray-900 truncate">{value}</p>
+      {sub && (
+        <p className={`text-[11px] font-semibold ${accent ? "text-orange-500" : "text-gray-400"}`}>
+          {sub}
+        </p>
+      )}
+    </div>
+  );
+}
+
+/* ── Page ───────────────────────────────────────────────────────────────── */
+export default function MainDashboard() {
+  const { user, stats } = mockData;
 
   return (
     <div
@@ -14,38 +30,53 @@ const MainDashboard = () => {
       style={{ fontFamily: "'DM Sans', sans-serif" }}
     >
 
-      {/* ── Welcome ── */}
-      <div className="flex flex-col gap-0.5">
-        <p className="text-xs font-semibold uppercase tracking-widest text-orange-400">
-          Dashboard
-        </p>
-        <h1 className="text-2xl font-bold text-gray-900">
-          Welcome back, {user.name.split(" ")[0]} 👋
-        </h1>
-        <p className="text-sm text-gray-400">
-          Here's what's happening with your freelance business today.
-        </p>
+      {/* ── Welcome banner ─────────────────────────────────────────── */}
+      {/* Desktop: quote sits inline top-right. Mobile: quote below. */}
+      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+        <div className="flex flex-col gap-0.5">
+          <p className="text-xs font-bold uppercase tracking-widest text-orange-400">Dashboard</p>
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+            Welcome back, {user.name.split(' ')[0]} 👋
+          </h1>
+          <p className="text-sm text-gray-400">Here's what's happening with your freelance business today.</p>
+        </div>
+
+        {/* Quote: desktop inline top-right, hidden on mobile */}
+        <div className="hidden sm:block w-72 flex-shrink-0">
+          <Quotes />
+        </div>
       </div>
 
-      {/* ── Row 1: Earnings | Client Growth | Quote ── */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-start">
-        <EarningsGoalsChart />
-        <Growth />
+      {/* Quote: mobile only, appears right under the welcome text */}
+      <div className="block sm:hidden">
         <Quotes />
       </div>
 
-      {/* ── Row 2: Ongoing Projects | Recent Activity ── */}
+      {/* ── Stat pills ─────────────────────────────────────────────── */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        <StatCard label="Total Projects" value={stats.totalProjects} sub="All time" />
+        <StatCard label="Active Clients"  value={stats.activeClients} sub="This month" accent />
+        <StatCard label="Earnings"        value={`$${stats.earnings.toLocaleString()}`} sub="Month to date" accent />
+        <StatCard
+          label="Monthly Goal"
+          value={`$${stats.MonthlyGoal.toLocaleString()}`}
+          sub={`${Math.round((stats.earnings / stats.MonthlyGoal) * 100)}% reached`}
+          accent
+        />
+      </div>
+
+      {/* ── Charts row: Earnings gauge + Growth chart ──────────────── */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
+        <EarningsGoalsChart />
+        <Growth />
+      </div>
+
+      {/* ── Projects + Activity row ────────────────────────────────── */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
-        <div className="flex flex-col h-full">
-          <OngoingProjects />
-        </div>
-        <div className="flex flex-col h-full">
-          <RecentActivity />
-        </div>
+        <OngoingProjects />
+        <RecentActivity />
       </div>
 
     </div>
   );
-};
-
-export default MainDashboard;
+}
